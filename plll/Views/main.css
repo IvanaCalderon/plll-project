@@ -1,9 +1,13 @@
+.image-fondo {
+    background-image: url("C:/Users/Alba/Documents/GitHub/plll-project/plll/Views/fondo/trabajo2.jpg");
+}
+
 body{
     background-color: #0d1117;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.login{
+.login {
     background-color: 0d1117;
     display: flex;
     align-items: center;
@@ -11,9 +15,9 @@ body{
     flex-direction: column;
     padding: 0px 30px;
     min-height: calc(100vh - 200px);
-    margin-top: 100px ;
-  }
-  .login__container{
+    margin-top: 100px;
+}
+.login__container {
     background-color: #0d1117;
     border: 2px solid white;
     border-radius: 40px;
@@ -23,7 +27,7 @@ body{
     width: 230px;
     justify-content: space-around;
     flex-direction: column;
-  }
+}
   .login__container--form{
     display: flex;
     flex-direction: column;
@@ -113,7 +117,7 @@ body{
  
   .nav1{
       color: white;
-      margin-right: 600px;
+      margin-right: auto;
   }
   .nav2 ul{
       display: flex;
@@ -190,9 +194,27 @@ footer ul li a {
     margin: 10px;
     color: #5f6368;
 }
+
+.image-fondo2 {
+    background-image: url("C:/Users/Alba/Documents/GitHub/plll-project/plll/Views/fondo/trabajo3.jpg");
+    background-size:500px;
+}
+
 .postulaciones {
-    margin-top: 100px;
-    margin-left: 360px;
-    color: white;
+    margin-top: 68px;
+    margin-left: 400px;
+    color: #0d1117;
     width: 400px;
 }
+______________________________________________
+form1 {
+    background-color: #ccc;
+    margin-right: 330px;
+    margin-left: 300px;
+    margin-top: 40px;
+    border-radius: 65px;
+    background-color: #0d1117;
+}
+
+
+

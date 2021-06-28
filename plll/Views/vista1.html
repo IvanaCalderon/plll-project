@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-
-    <section class="login">
-      <section class="login__container">
-        <h2 style="margin-top: -10px;"><center>Iniciar Sesion</center></h2>
-        <form class="login__container--form" action="index.html" method="post">
-          <input class="input" type="text" placeholder="Correo" id="email">
-          <input class="input" type="password" placeholder="password" id="password">
-          <button class="button"type="button" onclick="inicio()">Iniciar Sesion</button>
-        </form>
-      </section>
-    </section>
+      <div class= "image-fondo cabecera">
+          <section class="login">
+              <section class="login__container">
+                  <h2 style="margin-top: -10px;"><center>Bolsa de Empleos</center></h2>
+                  <form class="login__container--form" action="index.html" method="post">
+                      <input class="input" type="text" placeholder="Correo" id="email">
+                      <input class="input" type="password" placeholder="password" id="password">
+                      <button class="button" type="button" onclick="inicio()">Iniciar Sesion</button>
+                      <button class="button" type="button">Registrarse</button>
+                  </form>
+              </section>
+          </section>
+      </div>
   </body>
+
   <script>
 
 
@@ -28,10 +31,10 @@
         var Contraseña = document.getElementById("password").value;
 
         if (usuario == "saul" && Contraseña == "1234") {
-            alert('Clave buena')
+            alert('Contraseña Correcta')
         }
         else{
-            alert('clave mala');
+            alert('Contraseña incorrecta');
         }
       }
   </script>
