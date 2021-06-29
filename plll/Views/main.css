@@ -8,16 +8,18 @@ body{
 }
 
 .login {
+
     background-color: 0d1117;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 30px;
+    padding: 10px 30px;
     min-height: calc(100vh - 200px);
     margin-top: 100px;
 }
 .login__container {
+
     background-color: #0d1117;
     border: 2px solid white;
     border-radius: 40px;
@@ -201,19 +203,20 @@ footer ul li a {
 }
 
 .postulaciones {
-    margin-top: 68px;
-    margin-left: 400px;
-    color: #0d1117;
+    margin-top: 50px;
+    margin-left: 75px;
+    color: white;
     width: 400px;
 }
-______________________________________________
-form1 {
+
+.form__container3 {
     background-color: #ccc;
     margin-right: 330px;
     margin-left: 300px;
     margin-top: 40px;
     border-radius: 65px;
     background-color: #0d1117;
+    border: 2px solid white;
 }
 
 
