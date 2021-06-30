@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <div class= "image-fondo cabecera">
+          <section class="login">
+              <section class="login__container">
+                  <h2 style="margin-top: -10px;"><center>Bolsa de Empleos</center></h2>
+                  <form class="login__container--form" action="index.html" method="post">
+                      <input class="input" type="text" placeholder="Correo" id="email">
+                      <input class="input" type="password" placeholder="password" id="password">
+                      <button class="button" type="button" onclick="inicio()">Iniciar Sesion</button>
+                      <button class="button" type="button">Registrarse</button>
+                  </form>
+              </section>
+          </section>
+      </div>
+  </body>
+
+  <script>
+
+
+    function inicio(){
+
+        var usuario = document.getElementById("email").value;
+        var Contraseña = document.getElementById("password").value;
+
+        if (usuario == "saul" && Contraseña == "1234") {
+            alert('Contraseña Correcta')
+        }
+        else{
+            alert('Contraseña incorrecta');
+        }
+      }
+  </script>
+</html>
