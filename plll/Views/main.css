@@ -1,5 +1,5 @@
 .image-fondo {
-    background-image: url("C:/Users/Alba/Documents/GitHub/plll-project/plll/Views/fondo/trabajo2.jpg");
+    background-image: url("fondo/trabajo2.jpg");
 }
 
 body{
@@ -196,7 +196,7 @@ footer ul li a {
 }
 
 .image-fondo2 {
-    background-image: url("C:/Users/Alba/Documents/GitHub/plll-project/plll/Views/fondo/trabajo3.jpg");
+    background-image: url("fondo/trabajo3.jpg");
     background-size:500px;
 }
 
