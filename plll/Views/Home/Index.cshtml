@@ -18,13 +18,17 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    .image-fondo {
+        background-image: url("../fondo/trabajo2.jpg");
+    }
+
     .login {
         background-color: 0d1117;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 0px 30px;
+        padding: 10px 30px;
         min-height: calc(100vh - 200px);
         margin-top: 100px;
     }
@@ -36,7 +40,7 @@
         color: white;
         padding: 60px 68px 40px;
         min-height: 280px;
-        width: 280px;
+        width: 230px;
         justify-content: space-around;
         flex-direction: column;
     }
@@ -130,24 +134,142 @@
         letter-spacing: 1px;
         margin: 10px 0px;
     }
+      /* vista 3*/
+    nav {
+        height: 70px;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+
+    .nav1 {
+        color: white;
+        margin-right: auto;
+    }
+
+    .nav2 ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+        color: white;
+        list-style: none;
+        margin-top: 25px;
+    }
+
+        .nav2 ul li {
+            margin-left: 40px;
+        }
+
+            .nav2 ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+    .busquedas {
+        display: flex;
+        margin-top: 100px;
+        width: 550px;
+    }
+
+    .post {
+        margin-left: 230px;
+    }
+
+    .post-fast {
+        width: 50%;
+        margin-left: 340px;
+        margin-top: 100px;
+        color: white;
+    }
+
+    .post-fast-campos {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .campos {
+        margin-left: 225px;
+    }
+
+    .post-search {
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 340px;
+        color: white;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        font-size: 13px;
+        background-color: #0d1117;
+        border-top: 1px solid #e4e4e4;
+        margin-top: 100px;
+    }
+
+        footer ul {
+            margin: 10px;
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        footer .footer-left {
+            justify-self: left;
+        }
+
+        footer .footer-right {
+            justify-self: right;
+        }
+
+        footer ul li a {
+            margin: 10px;
+            color: #5f6368;
+        }
+
+    .image-fondo2 {
+        background-image: url("C:/Users/Alba/Documents/GitHub/plll-project/plll/Views/fondo/trabajo3.jpg");
+        background-size: 500px;
+    }
+
+    .postulaciones {
+        margin-top: 50px;
+        margin-left: 75px;
+        color: white;
+        width: 400px;
+    }
+
+    .form__container3 {
+        background-color: #ccc;
+        margin-right: 330px;
+        margin-left: 300px;
+        margin-top: 40px;
+        border-radius: 65px;
+        background-color: #0d1117;
+        border: 2px solid white;
+    }
 </style>
 <body>
-
-    <section class="login">
-        <section class="login__container">
-            <h2 style="margin-top: -10px;"><center>Iniciar Sesion</center></h2>
-            <form class="login__container--form" action="index.html" method="post">
-                <input class="input" type="text" placeholder="Correo" id="email">
-                <input class="input" type="password" placeholder="password" id="password">
-                <button class="button" type="button" onclick="inicio()">Iniciar Sesion</button>
-            </form>
+    <div class="image-fondo cabecera">
+        <section class="login">
+            <section class="login__container">
+                <h2 style="margin-top: -10px;"><center>Bolsa de Empleos</center></h2>
+                <form class="login__container--form" action="index.html" method="post">
+                    <input class="input" type="text" placeholder="Correo" id="email">
+                    <input class="input" type="password" placeholder="password" id="password">
+                    <button class="button" type="button" onclick="inicio()">Iniciar Sesion</button>
+                    <button class="button" type="button">Registrarse</button>
+                </form>
+            </section>
         </section>
-    </section>
-
+    </div>
 </body>
+
 <script>
-
-
 
 
     function inicio() {
@@ -156,12 +278,10 @@
         var Contraseña = document.getElementById("password").value;
 
         if (usuario == "saul" && Contraseña == "1234") {
-            alert("bueno")
-            window.location.href = "Home/Privacy"
-
+            alert('Contraseña Correcta')
         }
         else {
-            alert('clave mala');
+            alert('Contraseña incorrecta');
         }
     }
 </script>
