@@ -1,0 +1,168 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    body {
+        background-color: #0d1117;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login {
+        background-color: 0d1117;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 30px;
+        min-height: calc(100vh - 200px);
+        margin-top: 100px;
+    }
+
+    .login__container {
+        background-color: #0d1117;
+        border: 2px solid white;
+        border-radius: 40px;
+        color: white;
+        padding: 60px 68px 40px;
+        min-height: 280px;
+        width: 280px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .login__container--form {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .login__container--form label {
+            font-size: 14px;
+        }
+
+    .login__container--remember-me {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+        .login__container--remember-me a {
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+            .login__container--remember-me a:hover {
+                text-decoration: underline;
+            }
+
+    .login__container--social-media > div {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+        .login__container--social-media > div > img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+    .login__container--register {
+        font-size: 14px;
+        color: white;
+    }
+
+        .login__container--register a {
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+            .login__container--register a:hover {
+                text-decoration: underline;
+            }
+
+    .input {
+        color: white;
+        background-color: transparent;
+        border-left: 0px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-bottom: 2px solid white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+        outline: none;
+        height: 50px;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .button {
+        background-color: #0d1117;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 50px;
+        letter-spacing: 1px;
+        margin: 10px 0px;
+    }
+</style>
+<body>
+
+    <section class="login">
+        <section class="login__container">
+            <h2 style="margin-top: -10px;"><center>Iniciar Sesion</center></h2>
+            <form class="login__container--form" action="index.html" method="post">
+                <input class="input" type="text" placeholder="Correo" id="email">
+                <input class="input" type="password" placeholder="password" id="password">
+                <button class="button" type="button" onclick="inicio()">Iniciar Sesion</button>
+            </form>
+        </section>
+    </section>
+
+</body>
+<script>
+
+
+
+
+    function inicio() {
+
+        var usuario = document.getElementById("email").value;
+        var Contraseña = document.getElementById("password").value;
+
+        if (usuario == "saul" && Contraseña == "1234") {
+            alert("bueno")
+            window.location.href = "Home/Privacy"
+
+        }
+        else {
+            alert('clave mala');
+        }
+    }
+</script>
+</html>

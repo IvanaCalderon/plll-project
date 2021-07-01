@@ -1,0 +1,387 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<style>
+    
+
+    body {
+        background-color: #0d1117;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login {
+        background-color: 0d1117;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 30px;
+        min-height: calc(100vh - 200px);
+        margin-top: 100px;
+    }
+
+    .login__container {
+        background-color: #0d1117;
+        border: 2px solid white;
+        border-radius: 40px;
+        color: white;
+        padding: 60px 68px 40px;
+        min-height: 280px;
+        width: 230px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .login__container--form {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .login__container--form label {
+            font-size: 14px;
+        }
+
+    .login__container--remember-me {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+        .login__container--remember-me a {
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+            .login__container--remember-me a:hover {
+                text-decoration: underline;
+            }
+
+    .login__container--social-media > div {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+        .login__container--social-media > div > img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+    .login__container--register {
+        font-size: 14px;
+        color: white;
+    }
+
+        .login__container--register a {
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+            .login__container--register a:hover {
+                text-decoration: underline;
+            }
+
+    .input {
+        color: white;
+        background-color: transparent;
+        border-left: 0px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-bottom: 2px solid white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+        outline: none;
+        height: 50px;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .button {
+        background-color: #0d1117;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 50px;
+        letter-spacing: 1px;
+        margin: 10px 0px;
+    }
+
+
+    /*segunda vista*/
+    nav {
+        height: 70px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .nav1 {
+        color: white;
+        margin-right: auto;
+
+    }
+
+    .nav2 ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+        color: white;
+        list-style: none;
+        margin-top: 25px;
+    }
+
+        .nav2 ul li {
+            margin-left: 40px;
+        }
+
+            .nav2 ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+    .busquedas {
+        display: flex;
+        margin-top: 100px;
+        width: 550px;
+    }
+
+    .post {
+        margin-left: 230px;
+        background-color: rgb(3, 151, 3);
+        border: none;
+        border-radius: 5px;
+        color: black;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 100px;
+        varter-spacing: 1px;
+
+    }
+    
+
+    .post-fast {
+        width: 50%;
+        margin-left: 340px;
+        margin-top: 100px;
+        color: white;
+    }
+
+    .post-fast-campos {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .campos {
+        margin-left: 225px;
+    }
+
+    .post-search {
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 340px;
+        color: white;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        font-size: 13px;
+        background-color: #0d1117;
+        border-top: 1px solid #e4e4e4;
+        margin-top: 100px;
+    }
+
+        footer ul {
+            margin: 10px;
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        footer .footer-left {
+            justify-self: left;
+        }
+
+        footer .footer-right {
+            justify-self: right;
+        }
+
+        footer ul li a {
+            margin: 10px;
+            color: #5f6368;
+        }
+
+    .image-fondo2 {
+        background-image: url("fondo/trabajo3.jpg");
+        background-size: 500px;
+    }
+
+    .postulaciones {
+        margin-top: 68px;
+        margin-left: 400px;
+        color: #0d1117;
+        width: 400px;
+    }
+
+
+    ______________________________________________
+    form1 {
+        background-color: #ccc;
+        margin-right: 330px;
+        margin-left: 300px;
+        margin-top: 40px;
+        border-radius: 65px;
+        background-color: #0d1117;
+    }
+
+    .entrada {
+        background-color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 230px;
+        varter-spacing: 1px;
+    }
+    .post {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 150px;
+        varter-spacing: 1px;
+        margin-right:-100px;
+    }
+    .buscar {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 150px;
+        varter-spacing: 1px;
+        margin-right:-100px;
+        margin-left:-40px;
+    }
+</style>
+<body>
+    <header>
+        <Nav style="display: flex; margin-top:-10px; margin-bottom:-20px;">
+            <div class="nav1">
+                <h1 style="margin-top:10px;">Busqueda de empleos</h1>
+            </div>
+            <div class="nav2">
+                <ul>
+                    <li><a href="vista1.html">Login</a></li>
+                    <li><a href="vista2.html">Home</a></li>
+                    <li><a href="vista3.html">Post</a></li>
+                </ul>
+            </div>
+        </Nav><hr style="background-color:white; width:1250px; margin-left:-70px; margin-bottom:100px;">
+    </header>
+    <center>
+        <section class="Busquedas" style="display:flex; justify-content:center;">
+            <div class="filtro">
+                <input class="entrada" style="margin-left:-70px; margin-right:60px;"  />
+            </div>
+            <div>
+                <button class="buscar" onclick="buscando()" type="button">Buscar</button>
+                <button class="post" onclick="postear()">Postear</button>
+            </div>
+        </section>
+    </center>
+
+    <section class="post-fast" style="margin-left: 220px;">
+        <div>
+            Puestos que te pueden interesar.
+        </div> <hr style="background-color:white; width:700px;">
+        <div class="post-fast-campos">
+            <p>Ubicacion</p>
+            <p class="campos">Posicion</p>
+            <p class="campos">Compañia</p>
+        </div>
+    </section>
+
+    <section class="post-search" style="margin-left: 220px;">
+        <div>
+            Aqui va la categoria buscada
+        </div> <hr style="background-color:white; width:700px;">
+        <div class="post-fast-campos">
+            <p>Ubicacion</p>
+            <p class="campos">Posicion</p>
+            <p class="campos">Compañia</p>
+        </div>
+        <div class="result-search">
+
+        </div>
+    </section>
+
+    <footer style="width: 1250px; margin-left: -70px; margin-bottom:-60px;">
+        <ul class="footer-left">
+            <li><a href="">Publicidad</a></li>
+            <li><a href="">Negocios</a></li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="">Como funciona la busqueda</a></li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="">Privacidad</a></li>
+            <li><a href="">Condiciones</a></li>
+            <li><a href="">Ajustes</a></li>
+        </ul>
+    </footer>
+
+</body>
+<script>
+
+    function buscando() {
+        alert("estoy buscando")
+    }
+    function postear() {
+        alert("estoy posteando")
+    }
+</script>
+</html>
