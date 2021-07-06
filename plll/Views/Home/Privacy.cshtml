@@ -1,0 +1,252 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bolsa de empleos</title>
+</head>
+<style>
+    
+
+    body {
+        background-color: #0d1117;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    
+
+    /*segunda vista*/
+    nav {
+        height: 70px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .nav1 {
+        color: white;
+        margin-right: auto;
+
+    }
+
+    .nav2 ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+        color: white;
+        list-style: none;
+        margin-top: 25px;
+    }
+
+        .nav2 ul li {
+            margin-left: 40px;
+        }
+
+            .nav2 ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+    .busquedas {
+        display: flex;
+        margin-top: 100px;
+        width: 550px;
+    }
+
+    .post {
+        margin-left: 230px;
+        background-color: rgb(3, 151, 3);
+        border: none;
+        border-radius: 5px;
+        color: black;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 100px;
+        varter-spacing: 1px;
+
+    }
+    
+
+    .post-fast {
+        width: 50%;
+        margin-left: 340px;
+        margin-top: 100px;
+        color: white;
+    }
+
+    .post-fast-campos {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .campos {
+        margin-left: 225px;
+    }
+
+    .post-search {
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 340px;
+        color: white;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        font-size: 13px;
+        background-color: #0d1117;
+        border-top: 1px solid #e4e4e4;
+        margin-top: 100px;
+    }
+
+        footer ul {
+            margin: 10px;
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        footer .footer-left {
+            justify-self: left;
+        }
+
+        footer .footer-right {
+            justify-self: right;
+        }
+
+        footer ul li a {
+            margin: 10px;
+            color: #5f6368;
+        }
+
+    .image-fondo2 {
+        background-image: url("C:/Users/Alba/Documents/GitHub/plll-project/plll/Views/fondo/trabajo3.jpg");
+        background-size: 500px;
+    }
+
+    .postulaciones {
+        margin-top: 68px;
+        margin-left: 400px;
+        color: #0d1117;
+        width: 400px;
+    }
+
+
+    ______________________________________________
+    form1 {
+        background-color: #ccc;
+        margin-right: 330px;
+        margin-left: 300px;
+        margin-top: 40px;
+        border-radius: 65px;
+        background-color: #0d1117;
+    }
+
+    .entrada {
+        background-color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 230px;
+        varter-spacing: 1px;
+    }
+    .post {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 150px;
+        varter-spacing: 1px;
+        margin-right:-100px;
+    }
+    .buscar {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 30px;
+        width: 150px;
+        varter-spacing: 1px;
+        margin-right:-100px;
+        margin-left:-40px;
+    }
+</style>
+<body>
+    <header>
+        <Nav style="display: flex;">
+            <div class="nav1">
+                <h1>Postulaciones de empleos</h1>
+            </div>
+
+        </Nav><hr>
+    </header>
+    <center>
+
+    </center>
+    <div class="image-fondo2 cabeza">
+        <form class="form__container3">
+            <section class="postulaciones">
+                <p><strong> Publicar trabajo</strong></p>
+                <label style="color:white;">
+                    Categoria <select style="width: 200px; color:black; margin-left: 34px;">
+                        <option selected> Administrativo</option>
+                        <option>Arte y diseño</option>
+                        <option>Educación</option>
+                        <option>Tecnologías de la Información</option>
+                        <option>Atención a clientes</option>
+                        <option>Manufactura</option>
+                    </select>
+                </label> <br>
+                <label style="color:white;">Compañia <input type="text" style="margin-top:4px; margin-left: 31px;"></label> <br>
+                <label style="color:white;">Url <input type="text" style="margin-top:4px; margin-left: 82px;"></label> <br>
+                <label style="color:white;">Posicion <input type="text" style="margin-top:4px; margin-left: 45px;"></label> <br>
+                <label style="color:white;">Ubicacion <input type="text" style="margin-top:4px; margin-left: 33px;"></label> <br>
+                <label style="color:white;">Descripcion <input type="text" style=" margin-top:4px; margin-left: 20px; height:40px;"></label> <br> <br>
+                <button>Postear</button>
+            </section>
+        </form>
+
+    </div>
+
+
+    <footer style="position: absolute;">
+        <ul class="footer-left">
+            <li><a href="">Publicidad</a></li>
+            <li><a href="">Negocios</a></li>
+            <li><a href="">Abaout</a></li>
+            <li><a href="">Como funciona la busqueda</a></li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="">Privacidad</a></li>
+            <li><a href="">Condiciones</a></li>
+            <li><a href="">Ajustes</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
